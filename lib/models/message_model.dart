@@ -16,14 +16,14 @@ Message({
 final User currenUser=User(
   id:0,
   name:"current user",
-  imageUrl:"assets/images/current.png"
+  imageUrl:"../assets/images/current.png"
 );
 
 
 final User melkam=User(
     id:1,
     name:"melkam",
-    imageUrl:"assets/images/melkam"
+    imageUrl:"assets/images/melkam.png"
 );
 
 final User beminet=User(
