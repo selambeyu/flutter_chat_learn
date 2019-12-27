@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/category_selector.dart';
 import '../widgets/favorite_contact.dart';
+import '../widgets/recent_chat.dart';
 
 class HomeScreen extends StatefulWidget{
   @override
@@ -13,8 +14,9 @@ class _HomeScreenState extends State<HomeScreen>{
   Widget build(BuildContext context) {
     // TODO: implement build
      return Scaffold(
-       backgroundColor: Theme.of(context).primaryColor,
+       backgroundColor: Colors.purple,
        appBar: AppBar(
+         backgroundColor: Colors.purple,
          leading: IconButton(
            icon: Icon(Icons.menu),
            iconSize: 30.0,
@@ -47,7 +49,8 @@ class _HomeScreenState extends State<HomeScreen>{
              ),
              child: Column(
                children: <Widget>[
-                 FavoriteContact()
+                 FavoriteContact(),
+                  RecentChat()
 
 
                ],

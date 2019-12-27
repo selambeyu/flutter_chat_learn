@@ -18,7 +18,7 @@ class _CategorySelectro extends State<CategorySelector>{
     // TODO: implement build
     return Container(
       height: 90.0,
-      color: Theme.of(context).primaryColor ,
+      color: Colors.purple ,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: categories.length,

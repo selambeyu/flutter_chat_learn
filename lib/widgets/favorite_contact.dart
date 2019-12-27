@@ -37,22 +37,28 @@ class FavoriteContact extends StatelessWidget{
         ),
         Container(
           height: 120.0,
-          color: Colors.blue,
           child: ListView.builder(
             padding: EdgeInsets.only(left: 10.0),
             scrollDirection: Axis.horizontal,
             itemCount: favorite.length,
             itemBuilder: (BuildContext context, int index){
-              return Column(
+              return Padding(
+                padding: EdgeInsets.all(10.0),
+                child :Column(
                 children: <Widget>[
                   CircleAvatar(
                     radius: 20.0,
                     backgroundImage: AssetImage(favorite[index].imageUrl),
 
                   ),
-                  Text(favorite[index].name)
+                  SizedBox(height: 6.0,),
+                  Text(favorite[index].name,style: TextStyle(
+                    color: Colors.blueGrey,
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.w600
+                  ),)
                 ],
-              );
+              ));
             }
 
           ),
